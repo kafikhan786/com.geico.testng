@@ -6,29 +6,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import static common.CommonActions.*;
 
-public class MenuPage {
+public class HomePageLogo {
 
 	WebDriver driver;
 
-	public MenuPage(WebDriver driver) {
+	public HomePageLogo(WebDriver driver) {
 		super();
 		this.driver = driver;
+		
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	@FindBy(xpath= "//span[@class='header-link']")
-	WebElement hamburgerIcon;
+	@FindBy(xpath = "//a[@class='icon-geico']") 
+	WebElement logo;
 	
-	public void clickOnhamburgerIcon() {
-		pause(3);
-		
-		clickElement(hamburgerIcon);
-		
-		verifyTextInTheWebElement(hamburgerIcon, "Menu");
-		pause(2);
+	public void isLogoDisplayed() {
+		elementDisplayed(logo);
 	}
-	
 	
 	
 	

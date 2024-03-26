@@ -1,195 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-24T00:03:39 EDT" name="Suite" finished-at="2024-03-24T00:03:40 EDT" duration-ms="1696">
+  <suite started-at="2024-03-25T23:48:24 EDT" name="Default suite" finished-at="2024-03-25T23:48:33 EDT" duration-ms="8331">
     <groups>
     </groups>
-    <test started-at="2024-03-24T00:03:39 EDT" name="Test" finished-at="2024-03-24T00:03:40 EDT" duration-ms="1696">
-      <class name="pagesTest.DropDownAutoPageTest">
-        <test-method is-config="true" signature="initialReporting()[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:38 EDT" name="initialReporting" finished-at="2024-03-24T00:03:39 EDT" duration-ms="298" status="PASS">
+    <test started-at="2024-03-25T23:48:24 EDT" name="Default test" finished-at="2024-03-25T23:48:33 EDT" duration-ms="8331">
+      <class name="pagesTest.PracticeClassTest">
+        <test-method is-config="true" signature="initialReporting()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:24 EDT" name="initialReporting" finished-at="2024-03-25T23:48:24 EDT" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialReporting -->
-        <test-method is-config="true" signature="beforeClassSetUp()[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:39 EDT" name="beforeClassSetUp" finished-at="2024-03-24T00:03:39 EDT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetUp()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:24 EDT" name="beforeClassSetUp" finished-at="2024-03-25T23:48:24 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetUp -->
-        <test-method is-config="true" signature="initialTest(java.lang.reflect.Method)[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:39 EDT" name="initialTest" finished-at="2024-03-24T00:03:39 EDT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="initialTest(java.lang.reflect.Method)[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:24 EDT" name="initialTest" finished-at="2024-03-25T23:48:24 EDT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void pagesTest.DropDownAutoPageTest.dropDownAutoPageTest()]]>
+                <![CDATA[public void pagesTest.PracticeClassTest.practiceClassMethodsTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:39 EDT" name="setUp" finished-at="2024-03-24T00:03:40 EDT" duration-ms="1615" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:24 EDT" name="setUp" finished-at="2024-03-25T23:48:30 EDT" duration-ms="5636" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
-Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'RAKIBUR-KHAN', ip: '192.168.18.96'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
-Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'RAKIBUR-KHAN', ip: '192.168.18.96'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
-at baseUtil.BaseClass.initDriver(BaseClass.java:104)
-at baseUtil.BaseClass.setUp(BaseClass.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dropDownAutoPageTest()[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:40 EDT" name="dropDownAutoPageTest" finished-at="2024-03-24T00:03:40 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
-Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'RAKIBUR-KHAN', ip: '192.168.18.96'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
-Current browser version is 123.0.6312.58 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'RAKIBUR-KHAN', ip: '192.168.18.96'
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
-at baseUtil.BaseClass.initDriver(BaseClass.java:104)
-at baseUtil.BaseClass.setUp(BaseClass.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="practiceClassMethodsTest()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:30 EDT" name="practiceClassMethodsTest" finished-at="2024-03-25T23:48:33 EDT" duration-ms="2379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropDownAutoPageTest -->
-        <test-method is-config="true" signature="afterEachTest(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:40 EDT" name="afterEachTest" finished-at="2024-03-24T00:03:40 EDT" duration-ms="0" status="SKIP">
+        </test-method> <!-- practiceClassMethodsTest -->
+        <test-method is-config="true" signature="afterEachTest(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:33 EDT" name="afterEachTest" finished-at="2024-03-25T23:48:33 EDT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pagesTest.PracticeClassTest.practiceClassMethodsTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=practiceClassMethodsTest status=SUCCESS method=PracticeClassTest.practiceClassMethodsTest()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:40 EDT" name="tearUp" finished-at="2024-03-24T00:03:40 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:33 EDT" name="tearUp" finished-at="2024-03-25T23:48:33 EDT" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:pagesTest.DropDownAutoPageTest@235ecd9f]" started-at="2024-03-24T00:03:40 EDT" name="publishReport" finished-at="2024-03-24T00:03:41 EDT" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:pagesTest.PracticeClassTest@663c9e7a]" started-at="2024-03-25T23:48:33 EDT" name="publishReport" finished-at="2024-03-25T23:48:33 EDT" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- pagesTest.DropDownAutoPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- pagesTest.PracticeClassTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
