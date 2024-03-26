@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser" value="chrome" />
+	<!-- above line added -->
+	<test thread-count="5" name="Test">
+		<classes>
+			<!-- <class name="pagesTest.HomePageTest" /> -->
+			<class name="pagesTest.DropDownAutoPageTest" />
+		</classes>
+	</test> 
+</suite>
+
+<!-- To create this Test Suit: Project .... Right click .... TestNG .... Covert To TestNG -->
+<!-- When we use Test Suit, we don't have relation with browser of config.properties file -->
