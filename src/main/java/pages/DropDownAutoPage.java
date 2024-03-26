@@ -28,6 +28,9 @@ public class DropDownAutoPage {
 	pause(3);
 	selectDropdown(autoDropDown, "Landlord");
 	pause(2);
+	
+	//driver.navigate().to("https://www.letskodeit.com/practice");
+	
 	}
 	
 	

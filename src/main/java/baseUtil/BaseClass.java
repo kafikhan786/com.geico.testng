@@ -27,9 +27,12 @@ import constants.Profile;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.DropDownAutoPage;
 import pages.HomePage;
+import pages.HomePageLogo;
 import pages.HomePageScroll;
+import pages.HomePageTitleVerification;
 import pages.LoginPage;
 import pages.MenuPage;
+import pages.PracticeClass;
 import reports.ExtentManager;
 import reports.ExtentTestManager;
 import utils.Configuration;
@@ -52,6 +55,10 @@ public class BaseClass {
 	public DropDownAutoPage dropDownAutoPage;
 	public MenuPage menuPage;
 	public HomePageScroll homePageScroll;
+	public HomePageTitleVerification homePageTitleVerification;
+	public HomePageLogo homePageLogo;
+	public PracticeClass practiceClass;
+	
 	
 	// newly added
 	@BeforeSuite
@@ -128,6 +135,11 @@ public class BaseClass {
 		dropDownAutoPage= new DropDownAutoPage(driver);
 		menuPage =new MenuPage(driver);
 		homePageScroll=new HomePageScroll(driver);
+		homePageTitleVerification =new HomePageTitleVerification(driver);
+		homePageLogo= new HomePageLogo(driver);
+		practiceClass =new PracticeClass(driver);
+		
+		
 	}	
 	
 	// newly added
